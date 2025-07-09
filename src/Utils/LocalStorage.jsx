@@ -1,306 +1,304 @@
-localStorage.clear
+localStorage.clear;
 
-const employees =[
- 
+const employees = [
   {
-    "id": 1,
-    "firstname": "Rahul",
-    "email": "employee1@example.com",
-    "password": "123",
-    "taskCount": {
-      "active": 2,
-      "newTask": 1,
-      "completed": 1,
-      "failed": 0
+    id: 1,
+    firstname: "Rahul",
+    email: "employee1@example.com",
+    password: "123",
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
     },
-    "tasks": [
+    tasks: [
       {
-        "title": "Prepare Report",
-        "description": "Compile the monthly sales report.",
-        "date": "2025-07-01",
-        "category": "Reporting",
-        "active": true,
-        "newTask": true,
-        "completed": false,
-        "failed": false
+        title: "Prepare Report",
+        description: "Compile the monthly sales report.",
+        date: "2025-07-01",
+        category: "Reporting",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
       },
       {
-        "title": "Team Meeting",
-        "description": "Attend the weekly team sync.",
-        "date": "2025-07-02",
-        "category": "Meetings",
-        "active": false,
-        "newTask": false,
-        "completed": true,
-        "failed": false
+        title: "Team Meeting",
+        description: "Attend the weekly team sync.",
+        date: "2025-07-02",
+        category: "Meetings",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
       },
       {
-        "title": "Client Follow-up",
-        "description": "Call client regarding project updates.",
-        "date": "2025-07-03",
-        "category": "Communication",
-        "active": true,
-        "newTask": false,
-        "completed": false,
-        "failed": false
-      }
-    ]
+        title: "Client Follow-up",
+        description: "Call client regarding project updates.",
+        date: "2025-07-03",
+        category: "Communication",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+      },
+    ],
   },
   {
-    "id": 2,
-    "firstname": "Priya",
-    "email": "employee2@example.com",
-    "password": "123",
-    "taskCount": {
-      "active": 2,
-      "newTask": 1,
-      "completed": 1,
-      "failed": 1
+    id: 2,
+    firstname: "Priya",
+    email: "employee2@example.com",
+    password: "123",
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
     },
-    "tasks": [
+    tasks: [
       {
-        "title": "Code Review",
-        "description": "Review the code submitted by the development team.",
-        "date": "2025-07-01",
-        "category": "Development",
-        "active": false,
-        "newTask": false,
-        "completed": true,
-        "failed": false
+        title: "Code Review",
+        description: "Review the code submitted by the development team.",
+        date: "2025-07-01",
+        category: "Development",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
       },
       {
-        "title": "Bug Fixing",
-        "description": "Fix the login bug reported by QA.",
-        "date": "2025-07-02",
-        "category": "Development",
-        "active": true,
-        "newTask": true,
-        "completed": false,
-        "failed": false
+        title: "Bug Fixing",
+        description: "Fix the login bug reported by QA.",
+        date: "2025-07-02",
+        category: "Development",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
       },
       {
-        "title": "Deploy to Staging",
-        "description": "Deploy the latest build to the staging server.",
-        "date": "2025-07-03",
-        "category": "Deployment",
-        "active": true,
-        "newTask": false,
-        "completed": false,
-        "failed": false
+        title: "Deploy to Staging",
+        description: "Deploy the latest build to the staging server.",
+        date: "2025-07-03",
+        category: "Deployment",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
       },
       {
-        "title": "Update Documentation",
-        "description": "Update the API documentation for new endpoints.",
-        "date": "2025-07-04",
-        "category": "Documentation",
-        "active": false,
-        "newTask": false,
-        "completed": false,
-        "failed": true
-      }
-    ]
+        title: "Update Documentation",
+        description: "Update the API documentation for new endpoints.",
+        date: "2025-07-04",
+        category: "Documentation",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+      },
+    ],
   },
   {
-    "id": 3,
-    "firstname": "Arjun",
-    "email": "employee3@example.com",
-    "password": "123",
-    "taskCount": {
-      "active": 3,
-      "newTask": 2,
-      "completed": 1,
-      "failed": 1
+    id: 3,
+    firstname: "Arjun",
+    email: "employee3@example.com",
+    password: "123",
+    taskCount: {
+      active: 3,
+      newTask: 2,
+      completed: 1,
+      failed: 1,
     },
-    "tasks": [
+    tasks: [
       {
-        "title": "Design Mockups",
-        "description": "Create UI mockups for the new project.",
-        "date": "2025-07-01",
-        "category": "Design",
-        "active": true,
-        "newTask": true,
-        "completed": false,
-        "failed": false
+        title: "Design Mockups",
+        description: "Create UI mockups for the new project.",
+        date: "2025-07-01",
+        category: "Design",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
       },
       {
-        "title": "Feedback Session",
-        "description": "Collect design feedback from the product team.",
-        "date": "2025-07-02",
-        "category": "Design",
-        "active": false,
-        "newTask": false,
-        "completed": true,
-        "failed": false
+        title: "Feedback Session",
+        description: "Collect design feedback from the product team.",
+        date: "2025-07-02",
+        category: "Design",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
       },
       {
-        "title": "Asset Delivery",
-        "description": "Deliver final assets to the development team.",
-        "date": "2025-07-03",
-        "category": "Design",
-        "active": true,
-        "newTask": false,
-        "completed": false,
-        "failed": false
+        title: "Asset Delivery",
+        description: "Deliver final assets to the development team.",
+        date: "2025-07-03",
+        category: "Design",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
       },
       {
-        "title": "Revise Icons",
-        "description": "Update the icon set based on feedback.",
-        "date": "2025-07-04",
-        "category": "Design",
-        "active": false,
-        "newTask": false,
-        "completed": false,
-        "failed": true
+        title: "Revise Icons",
+        description: "Update the icon set based on feedback.",
+        date: "2025-07-04",
+        category: "Design",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
       },
       {
-        "title": "Prototype Testing",
-        "description": "Test the interactive prototype with users.",
-        "date": "2025-07-05",
-        "category": "Testing",
-        "active": true,
-        "newTask": true,
-        "completed": false,
-        "failed": false
-      }
-    ]
+        title: "Prototype Testing",
+        description: "Test the interactive prototype with users.",
+        date: "2025-07-05",
+        category: "Testing",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+      },
+    ],
   },
   {
-    "id": 4,
-    "firstname": "Sneha",
-    "email": "employee4@example.com",
-    "password": "123",
-    "taskCount": {
-      "active": 2,
-      "newTask": 2,
-      "completed": 1,
-      "failed": 1
+    id: 4,
+    firstname: "Sneha",
+    email: "employee4@example.com",
+    password: "123",
+    taskCount: {
+      active: 2,
+      newTask: 2,
+      completed: 1,
+      failed: 1,
     },
-    "tasks": [
+    tasks: [
       {
-        "title": "Market Research",
-        "description": "Research competitors in the same industry.",
-        "date": "2025-07-01",
-        "category": "Research",
-        "active": true,
-        "newTask": true,
-        "completed": false,
-        "failed": false
+        title: "Market Research",
+        description: "Research competitors in the same industry.",
+        date: "2025-07-01",
+        category: "Research",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
       },
       {
-        "title": "Prepare Presentation",
-        "description": "Create presentation slides for client pitch.",
-        "date": "2025-07-02",
-        "category": "Sales",
-        "active": false,
-        "newTask": false,
-        "completed": true,
-        "failed": false
+        title: "Prepare Presentation",
+        description: "Create presentation slides for client pitch.",
+        date: "2025-07-02",
+        category: "Sales",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
       },
       {
-        "title": "Client Meeting",
-        "description": "Attend meeting with potential clients.",
-        "date": "2025-07-03",
-        "category": "Sales",
-        "active": true,
-        "newTask": false,
-        "completed": false,
-        "failed": false
+        title: "Client Meeting",
+        description: "Attend meeting with potential clients.",
+        date: "2025-07-03",
+        category: "Sales",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
       },
       {
-        "title": "Competitor Analysis",
-        "description": "Analyze competitor product features.",
-        "date": "2025-07-04",
-        "category": "Research",
-        "active": false,
-        "newTask": false,
-        "completed": false,
-        "failed": true
+        title: "Competitor Analysis",
+        description: "Analyze competitor product features.",
+        date: "2025-07-04",
+        category: "Research",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
       },
       {
-        "title": "Follow-up Emails",
-        "description": "Send follow-up emails to leads.",
-        "date": "2025-07-05",
-        "category": "Communication",
-        "active": true,
-        "newTask": true,
-        "completed": false,
-        "failed": false
-      }
-    ]
+        title: "Follow-up Emails",
+        description: "Send follow-up emails to leads.",
+        date: "2025-07-05",
+        category: "Communication",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+      },
+    ],
   },
   {
-    "id": 5,
-    "firstname": "Vikram",
-    "email": "employee5@example.com",
-    "password": "123",
-    "taskCount": {
-      "active": 2,
-      "newTask": 1,
-      "completed": 1,
-      "failed": 1
+    id: 5,
+    firstname: "Vikram",
+    email: "employee5@example.com",
+    password: "123",
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
     },
-    "tasks": [
+    tasks: [
       {
-        "title": "System Maintenance",
-        "description": "Perform scheduled system maintenance.",
-        "date": "2025-07-01",
-        "category": "IT",
-        "active": true,
-        "newTask": true,
-        "completed": false,
-        "failed": false
+        title: "System Maintenance",
+        description: "Perform scheduled system maintenance.",
+        date: "2025-07-01",
+        category: "IT",
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
       },
       {
-        "title": "Security Audit",
-        "description": "Conduct security audit of infrastructure.",
-        "date": "2025-07-02",
-        "category": "Security",
-        "active": false,
-        "newTask": false,
-        "completed": true,
-        "failed": false
+        title: "Security Audit",
+        description: "Conduct security audit of infrastructure.",
+        date: "2025-07-02",
+        category: "Security",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
       },
       {
-        "title": "Database Backup",
-        "description": "Backup the production database.",
-        "date": "2025-07-03",
-        "category": "IT",
-        "active": true,
-        "newTask": false,
-        "completed": false,
-        "failed": false
+        title: "Database Backup",
+        description: "Backup the production database.",
+        date: "2025-07-03",
+        category: "IT",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
       },
       {
-        "title": "Incident Report",
-        "description": "File report on recent server outage.",
-        "date": "2025-07-04",
-        "category": "IT",
-        "active": false,
-        "newTask": false,
-        "completed": false,
-        "failed": true
-      }
-    ]
-  }
+        title: "Incident Report",
+        description: "File report on recent server outage.",
+        date: "2025-07-04",
+        category: "IT",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+      },
+    ],
+  },
 ];
 
-
 const admin = [
-    {
-  "id": 1,
-  "email": "admin@example.com",
-  "password": "123"
-}
-]
+  {
+    id: 1,
+    email: "admin@example.com",
+    password: "123",
+  },
+];
 
-export const setLocalStorage = () =>{
-  localStorage.setItem('employees',JSON.stringify(employees))
-   localStorage.setItem('admin',JSON.stringify(admin))
-}
+export const setLocalStorage = () => {
+  localStorage.setItem("employees", JSON.stringify(employees));
+  localStorage.setItem("admin", JSON.stringify(admin));
+};
 
-export const getLocalStorage = () =>{
-    const employees = JSON.parse(localStorage.getItem('employees'))
-    const admin = JSON.parse(localStorage.getItem('admin'))
+export const getLocalStorage = () => {
+  const employees = JSON.parse(localStorage.getItem("employees"));
+  const admin = JSON.parse(localStorage.getItem("admin"));
 
-    return {employees, admin}
-}
+  return { employees, admin };
+};
